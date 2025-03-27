@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KOKABURA HOCKEY HOUSE - Premium hockey equipment including Performance hockey sticks and professional hockey shoes">
+    <title>KOKABURA HOCKEY HOUSE - Your Hockey Equipment Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">KOKABURA HOCKEY HOUSE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button" data-bs-toggle="dropdown">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Sticks</a></li>
+                            <li><a class="dropdown-item" href="#">Shoes</a></li>
+                            <li><a class="dropdown-item" href="#">Protective Gear</a></li>
+                            <li><a class="dropdown-item" href="#">Apparel</a></li>
+                            <li><a class="dropdown-item" href="#">Accessories</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Deals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+                <div class="d-flex">
+                    <form class="d-flex me-2">
+                        <input class="form-control me-2" type="search" placeholder="Search products...">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                    <a href="#" class="btn btn-outline-light position-relative">
+                        <i class="bi bi-cart"></i> Cart
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            3
+                        </span>
+                    </a>
+                    <a href="#" class="btn btn-outline-light ms-2"><i class="bi bi-person"></i> Account</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/hero1.jpg" class="d-block w-100" alt="Hockey Gear Sale">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>End of Season Sale</h2>
+                    <p>Up to 40% off select items</p>
+                    <a href="#" class="btn btn-primary btn-lg">Shop Now</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/hero2.jpg" class="d-block w-100" alt="New Stick Arrivals">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>New Stick Models</h2>
+                    <p>2023 lineup now available</p>
+                    <a href="#" class="btn btn-primary btn-lg">Browse Sticks</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- Featured Categories -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Shop by Category</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="category-card card h-100">
+                    <img src="images/category-sticks.jpg" class="card-img-top" alt="Hockey Sticks">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">Hockey Sticks</h3>
+                        <a href="#" class="btn btn-outline-primary">Browse Sticks</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="category-card card h-100">
+                    <img src="images/category-skates.jpg" class="card-img-top" alt="Hockey Skates">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">Skates</h3>
+                        <a href="#" class="btn btn-outline-primary">Browse Shoes/a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="category-card card h-100">
+                    <img src="images/category-gear.jpg" class="card-img-top" alt="Protective Gear">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">Protective Gear</h3>
+                        <a href="#" class="btn btn-outline-primary">Browse Gear</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="container my-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2>Featured Products</h2>
+            <a href="#" class="btn btn-outline-primary">View All</a>
+        </div>
+        <div class="row g-4">
+            <!-- Product cards would be dynamically generated -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card product-card h-100">
+                    <span class="badge bg-danger position-absolute top-0 end-0 m-2">Sale</span>
+                    <img src="images/product1.jpg" class="card-img-top" alt="Bauer Vapor Stick">
+                    <div class="card-body">
+                        <h5 class="card-title">Perfomance Hockey Stick</h5>
+                        <div class="rating mb-2">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-half text-warning"></i>
+                            <span class="ms-1">(24)</span>
+                        </div>
+                        <p class="card-text text-muted">Senior Hockey Stick - Right</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="text-decoration-line-through text-muted me-2">$299.99</span>
+                                <span class="fw-bold text-danger">$239.99</span>
+                            </div>
+                            <button class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- More product cards... -->
+        </div>
+    </section>
+    <!-- Product Listings Page -->
+<div class="container my-5">
+    <div class="row">
+        <!-- Sidebar Filters -->
+        <div class="col-md-3">
+            <div class="card mb-4">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">Filters</h5>
+                </div>
+                <div class="card-body">
+                    <h6>Categories</h6>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="cat-sticks">
+                        <label class="form-check-label" for="cat-sticks">Sticks</label>
+                    </div>
+                    <!-- More category filters -->
+
+                    <hr>
+                    <h6>Price Range</h6>
+                    <div class="range-slider mb-3">
+                        <input type="range" class="form-range" min="0" max="500" step="10" id="priceMin">
+                        <input type="range" class="form-range" min="0" max="500" step="10" id="priceMax">
+                        <div class="d-flex justify-content-between">
+                            <span>$0</span>
+                            <span>$500</span>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <h6>Brands</h6>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="brand-bauer">
+                        <label class="form-check-label" for="brand-bauer">Bauer</label>
+                    </div>
+                    <!-- More brand filters -->
+
+                    <hr>
+                    <h6>Player Type</h6>
+                    <select class="form-select mb-3">
+                        <option selected>Any</option>
+                        <option>Forward</option>
+                        <option>Defenseman</option>
+                        <option>Goalie</option>
+                    </select>
+
+                    <button class="btn btn-primary w-100">Apply Filters</button>
+                    <button class="btn btn-outline-secondary w-100 mt-2">Reset</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="col-md-9">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2>Hockey Sticks</h2>
+                <div class="d-flex">
+                    <div class="me-3">
+                        <label for="sort" class="form-label">Sort by:</label>
+                        <select id="sort" class="form-select">
+                            <option>Featured</option>
+                            <option>Price: Low to High</option>
+                            <option>Price: High to Low</option>
+                            <option>Customer Rating</option>
+                            <option>Newest Arrivals</option>
+                        </select>
+                    </div>
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-outline-secondary active"><i class="bi bi-grid"></i></button>
+                        <button type="button" class="btn btn-outline-secondary"><i class="bi bi-list"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Product cards would be dynamically generated -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card product-card h-100">
+                        <span class="badge bg-success position-absolute top-0 end-0 m-2">New</span>
+                        <img src="images/product2.jpg" class="card-img-top" alt="CCM Jetspeed Stick">
+                        <div class="card-body">
+                            <h5 class="card-title">Grays Shoes</h5>
+                            <div class="rating mb-2">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star text-warning"></i>
+                                <span class="ms-1">(18)</span>
+                            </div>
+                            <p class="card-text text-muted">Senior Hockey Stick - Right</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold">$279.99</span>
+                                <div>
+                                    <button class="btn btn-sm btn-outline-primary me-1">View</button>
+                                    <button class="btn btn-sm btn-primary">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- More product cards... -->
+            </div>
+
+            <!-- Pagination -->
+            <nav aria-label="Page navigation" class="mt-5">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+<!-- Product Details Page -->
+<div class="container my-5">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Sticks</a></li>
+            <li class="breadcrumb-item"><a href="#">Senior Sticks</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Performance Hockey Stick</li>
+        </ol>
+    </nav>
+
+    <div class="row">
+        <!-- Product Images -->
+        <div class="col-md-6">
+            <div class="mb-3">
+                <img src="images/product-large.jpg" class="img-fluid main-image" alt="Bauer Vapor HyperLite" id="mainImage">
+            </div>
+            <div class="row g-2 thumbnails">
+                <div class="col-3">
+                    <img src="images/product-thumb1.jpg" class="img-thumbnail active" alt="Thumbnail 1">
+                </div>
+                <div class="col-3">
+                    <img src="images/product-thumb2.jpg" class="img-thumbnail" alt="Thumbnail 2">
+                </div>
+                <div class="col-3">
+                    <img src="images/product-thumb3.jpg" class="img-thumbnail" alt="Thumbnail 3">
+                </div>
+                <div class="col-3">
+                    <img src="images/product-thumb4.jpg" class="img-thumbnail" alt="Thumbnail 4">
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Info -->
+        <div class="col-md-6">
+            <h1>Perfomance Hockey Stick</h1>
+            <div class="rating mb-3">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-half text-warning"></i>
+                <span class="ms-2">24 reviews</span>
+                <a href="#reviews" class="ms-2">Write a review</a>
+            </div>
+
+            <div class="price mb-3">
+                <span class="h3 text-danger">$239.99</span>
+                <span class="text-decoration-line-through text-muted ms-2">$299.99</span>
+                <span class="badge bg-danger ms-2">Save 20%</span>
+            </div>
+
+            <div class="availability mb-4">
+                <span class="text-success"><i class="bi bi-check-circle-fill"></i> In Stock (5+)</span>
+                <span class="text-muted ms-3">Ships in 1-2 business days</span>
+            </div>
+
+            <div class="product-options mb-4">
+                <div class="mb-3">
+                    <label class="form-label">Flex:</label>
+                    <div class="btn-group" role="group">
+                        <input type="radio" class="btn-check" name="flex" id="flex77" autocomplete="off" checked>
+                        <label class="btn btn-outline-primary" for="flex77">77</label>
+                        
+                        <input type="radio" class="btn-check" name="flex" id="flex87" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="flex87">87</label>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Hand:</label>
+                    <div class="btn-group" role="group">
+                        <input type="radio" class="btn-check" name="hand" id="hand-right" autocomplete="off" checked>
+                        <label class="btn btn-outline-primary" for="hand-right">Right</label>
+                        
+                        <input type="radio" class="btn-check" name="hand" id="hand-left" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="hand-left">Left</label>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Curve:</label>
+                    <select class="form-select">
+                        <option>P92 - Kane</option>
+                        <option>P28 - McDavid</option>
+                        <option>P29 - Crosby</option>
+                    </select>
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label">Quantity:</label>
+                    <div class="input-group" style="width: 120px;">
+                        <button class="btn btn-outline-secondary" type="button">-</button>
+                        <input type="text" class="form-control text-center" value="1">
+                        <button class="btn btn-outline-secondary" type="button">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex mb-4">
+                <button class="btn btn-primary btn-lg me-3">
+                    <i class="bi bi-cart-plus"></i> Add to Cart
+                </button>
+                <button class="btn btn-outline-secondary btn-lg">
+                    <i class="bi bi-heart"></i> Add to Wishlist
+                </button>
+            </div>
+
+            <div class="accordion" id="productAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#description">
+                            Description
+                        </button>
+                    </h2>
+                    <div id="description" class="accordion-collapse collapse show" data-bs-parent="#productAccordion">
+                        <div class="accordion-body">
+                            <p>The Perfomance hockey stick is the lightest Perfomance stick ever created, designed for elite players who want explosive speed and quick release.</p>
+                            <ul>
+                                <li>Weight: 385 grams</li>
+                                <li>HyperLite Core for maximum energy transfer</li>
+                                <li>XeTend Blade Technology for enhanced feel and durability</li>
+                                <li>Ergo Spine for improved comfort and control</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#specs">
+                            Specifications
+                        </button>
+                    </h2>
+                    <div id="specs" class="accordion-collapse collapse" data-bs-parent="#productAccordion">
+                        <div class="accordion-body">
+                            <table class="table">
+                                <tr>
+                                    <th>Brand</th>
+                                    <td>Bauer</td>
+                                </tr>
+                                <tr>
+                                    <th>Model</th>
+                                    <td>Vapor HyperLite</td>
+                                </tr>
+                                <tr>
+                                    <th>Material</th>
+                                    <td>Carbon Fiber</td>
+                                </tr>
+                                <tr>
+                                    <th>Kick Point</th>
+                                    <td>Low</td>
+                                </tr>
+                                <tr>
+                                    <th>Grip</th>
+                                    <td>Clear</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reviews Section -->
+    <div class="row mt-5" id="reviews">
+        <div class="col-12">
+            <h3>Customer Reviews</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h2 class="display-4">4.5</h2>
+                            <div class="rating mb-2">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-half text-warning"></i>
+                            </div>
+                            <p class="text-muted">Based on 24 reviews</p>
+                            <button class="btn btn-primary">Write a Review</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="review mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h5>Amazing stick!</h5>
+                            <div class="rating">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+                        </div>
+                        <p class="text-muted">By John D. on March 15, 2023</p>
+                        <p>This is the lightest stick I've ever used. The puck feel is incredible and my shot has never been harder. Worth every penny!</p>
+                    </div>
+                    <!-- More reviews... -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Related Products -->
+    <div class="row mt-5">
+        <div class="col-12">
+            <h3>You May Also Like</h3>
+            <div class="row g-4">
+                <!-- Related product cards... -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Shopping Cart Page -->
+<div class="container my-5">
+    <h1 class="mb-4">Your Shopping Cart</h1>
+    
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="card">
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
+                                    <th>Total</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex">
+                                            <img src="images/product-thumb1.jpg" class="img-thumbnail me-3" style="width: 80px; height: 80px;">
+                                            <div>
+                                                <h6 class="mb-1">Bauer Vapor HyperLite</h6>
+                                                <small class="text-muted">Senior Stick - Right - P92 - 77 Flex</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>$239.99</td>
+                                    <td>
+                                        <div class="input-group" style="width: 120px;">
+                                            <button class="btn btn-outline-secondary" type="button">-</button>
+                                            <input type="text" class="form-control text-center" value="1">
+                                            <button class="btn btn-outline-secondary" type="button">+</button>
+                                        </div>
+                                    </td>
+                                    <td>$239.99</td>
+                                    <td>
+                                        <button class="btn btn-sm btn-outline-danger"><i class="bi bi-trash"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex">
+                                            <img src="images/product-thumb2.jpg" class="img-thumbnail me-3" style="width: 80px; height: 80px;">
+                                            <div>
+                                                <h6 class="mb-1">Bauer Supreme Mach Skates</h6>
+                                                <small class="text-muted">Size 9D - Black</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>$399.99</td>
+                                    <td>
+                                        <div class="input-group" style="width: 120px;">
+                                            <button class="btn btn-outline-secondary" type="button">-</button>
+                                            <input type="text" class="form-control text-center" value="1">
+                                            <button class="btn btn-outline-secondary" type="button">+</button>
+                                        </div>
+                                    </td>
+                                    <td>$399.99</td>
+                                    <td>
+                                        <button class="btn btn-sm btn-outline-danger"><i class="bi bi-trash"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="d-flex justify-content-between">
+                        <button class="btn btn-outline-secondary">
+                            <i class="bi bi-arrow-left"></i> Continue Shopping
+                        </button>
+                        <button class="btn btn-outline-danger">
+                            Clear Cart <i class="bi bi-trash"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h5 class="card-title">Promo Code</h5>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Enter promo code">
+                        <button class="btn btn-primary" type="button">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Order Summary</h5>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th>Subtotal</th>
+                                <td class="text-end">$639.98</td>
+                            </tr>
+                            <tr>
+                                <th>Shipping</th>
+                                <td class="text-end">$15.00</td>
+                            </tr>
+                            <tr>
+                                <th>Tax</th>
+                                <td class="text-end">$51.20</td>
+                            </tr>
+                            <tr class="fw-bold">
+                                <th>Total</th>
+                                <td class="text-end">$706.18</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button class="btn btn-primary w-100 btn-lg">Proceed to Checkout</button>
+                    <div class="text-center mt-3">
+                        <img src="images/payment-icons.png" alt="Payment methods" class="img-fluid" style="max-height: 30px;">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h5 class="card-title">Need Help?</h5>
+                    <p>Our customer service team is available to assist you with any questions about your order.</p>
+                    <button class="btn btn-outline-primary w-100">Contact Support</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>                  
+<!-- Checkout Page -->
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card mb-4">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">1. Contact Information</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="accountType" id="guestCheckout" checked>
+                            <label class="form-check-label" for="guestCheckout">
+                                Checkout as Guest
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="accountType" id="loginCheckout">
+                            <label class="form-check-label" for="loginCheckout">
+                                Login to Your Account
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <form id="guestForm">
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="firstName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone">
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="createAccount">
+                            <label class="form-check-label" for="createAccount">
+                                Create an account for faster checkout next time
+                            </label>
+                        </div>
+                    </form>
+                    
+                    <form id="loginForm" style="display: none;">
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="loginEmail">
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginPassword">
+                        </div>
+                        <button type="button" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="card mb-4">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">2. Shipping Address</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label for="address1" class="form-label">Street Address</label>
+                        <input type="text" class="form-control" id="address1" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="address2" placeholder="Apartment, suite, etc. (optional)">
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-5">
+                            <label for="city" class="form-label">City</label>
+                            <input type="text" class="form-control" id="city" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="state" class="form-label">State/Province</label>
+                            <select class="form-select" id="state" required>
+                                <option value="">Select...</option>
+                                <option>Alabama</option>
+                                <!-- More states... -->
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="zip" class="form-label">ZIP/Postal Code</label>
+                            <input type="text" class="form-control" id="zip" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="country" class="form-label">Country</label>
+                        <select class="form-select" id="country" required>
+                            <option>United States</option>
+                            <option>Canada</option>
+                        </select>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="saveAddress">
+                        <label class="form-check-label" for="saveAddress">
+                            Save this address for next time
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card mb-4">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">3. Shipping Method</h5>
+                </div>
+                <div class="card-body">
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="shippingMethod" id="standardShipping" checked>
+                        <label class="form-check-label" for="standardShipping">
+                            <span class="fw-bold">Standard Shipping</span> - $15.00
+                            <br>
+                            <small class="text-muted">3-5 business days</small>
+                        </label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="shippingMethod" id="expressShipping">
+                        <label class="form-check-label" for="expressShipping">
+                            <span class="fw-bold">Express Shipping</span> - $25.00
+                            <br>
+                            <small class="text-muted">1-2 business days</small>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">4. Payment Method</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="paymentMethod" id="creditCard" checked>
+                            <label class="form-check-label" for="creditCard">
+                                Credit/Debit Card
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="paymentMethod" id="paypal">
+                            <label class="form-check-label" for="paypal">
+                                PayPal
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div id="creditCardForm">
+                        <div class="mb-3">
+                            <label for="cardNumber" class="form-label">Card Number</label>
+                            <input type="text" class="form-control" id="cardNumber" placeholder="1234 5678 9012 3456">
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="cardName" class="form-label">Name on Card</label>
+                                <input type="text" class="form-control" id="cardName">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="expiry" class="form-label">Expiry Date</label>
+                                <input type="text" class="form-control" id="expiry" placeholder="MM/YY">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="cvv" class="form-label">CVV</label>
+                                <input type="text" class="form-control" id="cvv" placeholder="123">
+                            </div>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="saveCard">
+                            <label class="form-check-label" for="saveCard">
+                                Save this card for future purchases
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div id="paypalForm" style="display: none;">
+                        <p>You will be redirected to PayPal to complete your purchase securely.</p>
+                        <img src="images/paypal-logo.png" alt="PayPal" class="img-fluid" style="max-height: 40px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-header bg-light">
+                    <h5 class="mb-0">Order Summary</h5>
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>Subtotal (2 items)</span>
+                        <span>$639.98</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>Shipping</span>
+                        <span>$15.00</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3">
+                        <span>Tax</span>
+                        <span>$51.20</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between fw-bold">
+                        <span>Total</span>
+                        <span>$706.18</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Promo Code</h5>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Enter promo code">
+                        <button class="btn btn-primary" type="button">Apply</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-body">
+                    <button class="btn btn-primary w-100 btn-lg">Place Order</button>
+                    <p class="text-muted small mt-2">By placing your order, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p>
+                    <img src="images/payment-icons.png" alt="Payment methods" class="img-fluid mt-3" style="max-height: 30px;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- User Account Page -->
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body text-center">
+                    <img src="images/user-avatar.jpg" class="rounded-circle mb-3" width="100" height="100" alt="User Avatar">
+                    <h5>John Smith</h5>
+                    <p class="text-muted">Member since 2022</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item active">
+                        <a href="#" class="text-white text-decoration-none">Dashboard</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" class="text-decoration-none">Orders</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" class="text-decoration-none">Wishlist</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" class="text-decoration-none">Addresses</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" class="text-decoration-none">Payment Methods</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" class="text-decoration-none">Account Details</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" class="text-decoration-none">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="col-md-9">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">Account Overview</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6>Recent Orders</h6>
+                            <div class="table-responsive">
+                                <table class="table table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th>Order #</th>
+                                            <th>Date</th>
+                                            <th>Total</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="#">#10025</a></td>
+                                            <td>Mar 15, 2023</td>
+                                            <td>$239.99</td>
+                                            <td><span class="badge bg-success">Delivered</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">#10018</a></td>
+                                            <td>Feb 28, 2023</td>
+                                            <td>$399.99</td>
+                                            <td><span class="badge bg-success">Delivered</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary btn-sm">View All Orders</a>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Account Details</h6>
+                            <p>
+                                <strong>John Smith</strong><br>
+                                john.smith@example.com<br>
+                                (555) 123-4567
+                            </p>
+                            <a href="#" class="btn btn-outline-primary btn-sm me-2">Edit Profile</a>
+                            <a href="#" class="btn btn-outline-secondary btn-sm">Change Password</a>
+                            
+                            <h6 class="mt-4">Default Address</h6>
+                            <address>
+                                123 Main St<br>
+                                Apt 4B<br>
+                                NAIROBI, MA 02108<br>
+                                KENYA
+                            </address>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Manage Addresses</a>
+                        </div>
+                    </div>
+                    
+                    <hr class="my-4">
+                    
+                    <h5>Your Wishlist</h5>
+                    <div class="row g-3">
+                        <div class="col-6 col-md-3">
+                            <div class="card">
+                                <img src="images/product-thumb3.jpg" class="card-img-top" alt="Product">
+                                <div class="card-body p-2">
+                                    <h6 class="card-title mb-1">Grays shoes</h6>
+                                    <p class="card-text text-muted small mb-1">$349.99</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                                        <button class="btn btn-sm btn-outline-danger"><i class="bi bi-trash"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- More wishlist items... -->
+                    </div>
+                    <a href="#" class="btn btn-outline-primary btn-sm mt-3">View Full Wishlist</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>KOKABURA HOCKEY HOUSE</h5>
+                    <p>Your one-stop shop for all hockey equipment and apparel needs.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">About Us</a></li>
+                        <li><a href="#" class="text-white">Shipping Policy</a></li>
+                        <li><a href="#" class="text-white">Return Policy</a></li>
+                        <li><a href="#" class="text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Customer Service</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Contact Us</a></li>
+                        <li><a href="#" class="text-white">FAQs</a></li>
+                        <li><a href="#" class="text-white">Size Guides</a></li>
+                        <li><a href="#" class="text-white">Track Order</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Stay Connected</h5>
+                    <p>Subscribe to our newsletter for deals and updates</p>
+                    <form class="mb-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 KOKABURA HOCKEY HOUSE. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <img src="images/payment-icons.png" alt="Accepted payment methods" class="img-fluid" style="max-height: 30px;">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"></script>
+    <script src="script.js"></script>
+</body>
+</html>
